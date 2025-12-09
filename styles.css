@@ -1,4 +1,4 @@
-@import url('data:text/css;base64,');
+/* Base styles for The Church of the Random */
 
 * {
   margin: 0;
@@ -225,7 +225,7 @@ nav {
 }
 
 .logo-text h1 {
-  font-size: 2.5rem;
+  font-size: clamp(1.4rem, 2.2vw + 1rem, 2.5rem);
   font-weight: 300;
   letter-spacing: 0.4rem;
   color: var(--light-text);
@@ -235,7 +235,7 @@ nav {
 }
 
 .logo-text p {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 0.6vw + 0.6rem, 1rem);
   color: var(--accent-gold);
   letter-spacing: 0.25rem;
   font-style: italic;
@@ -326,7 +326,7 @@ nav {
 }
 
 .hero-content h2 {
-  font-size: 4.5rem;
+  font-size: clamp(2rem, 5vw + 1rem, 4.5rem);
   font-weight: 300;
   color: var(--light-text);
   margin-bottom: 2rem;
@@ -336,7 +336,7 @@ nav {
 }
 
 .hero-content .subtitle {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1.2vw + 0.6rem, 1.5rem);
   color: var(--accent-gold);
   font-style: italic;
   margin-bottom: 1rem;
@@ -345,7 +345,7 @@ nav {
 }
 
 .hero-content .tagline {
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 0.8vw + 0.6rem, 1.1rem);
   color: var(--muted-text);
   max-width: 600px;
   margin: 0 auto;
@@ -387,7 +387,7 @@ nav {
 .content-section {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 8rem 4rem;
+  padding: clamp(4rem, 6vw, 8rem) clamp(1.5rem, 3vw, 4rem);
 }
 
 .section-header {
@@ -396,7 +396,7 @@ nav {
 }
 
 .section-header h3 {
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 3vw + 0.8rem, 3rem);
   color: var(--light-text);
   margin-bottom: 1.5rem;
   font-weight: 300;
@@ -405,7 +405,7 @@ nav {
 }
 
 .section-header p {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 0.6vw + 0.7rem, 1.2rem);
   color: var(--muted-text);
   max-width: 700px;
   margin: 0 auto;
@@ -452,14 +452,14 @@ nav {
 }
 
 .pillar-icon {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 2.5vw + 1rem, 3.5rem);
   margin-bottom: 2rem;
   filter: grayscale(1) brightness(1.5);
   opacity: 0.8;
 }
 
 .pillar h4 {
-  font-size: 1.6rem;
+  font-size: clamp(1.2rem, 1.2vw + 0.6rem, 1.6rem);
   margin-bottom: 1.5rem;
   color: var(--accent-gold);
   font-weight: 300;
@@ -470,7 +470,7 @@ nav {
 .pillar p {
   color: var(--muted-text);
   line-height: 1.9;
-  font-size: 1.05rem;
+  font-size: clamp(0.95rem, 0.6vw + 0.6rem, 1.05rem);
 }
 
 /* Quote Section */
@@ -496,7 +496,7 @@ nav {
 }
 
 .quote-section blockquote {
-  font-size: 2.2rem;
+  font-size: clamp(1.3rem, 2.5vw + 0.5rem, 2.2rem);
   font-style: italic;
   max-width: 900px;
   margin: 0 auto 2rem;
@@ -528,7 +528,7 @@ nav {
 
 .teaching-card {
   background: rgba(20, 27, 61, 0.6);
-  padding: 3rem;
+  padding: clamp(1.5rem, 2vw + 1rem, 3rem);
   border-left: 3px solid var(--accent-gold);
   transition: all 0.3s ease;
 }
@@ -539,7 +539,7 @@ nav {
 }
 
 .teaching-card h5 {
-  font-size: 1.8rem;
+  font-size: clamp(1.2rem, 1.4vw + 0.7rem, 1.8rem);
   color: var(--accent-gold);
   margin-bottom: 1.5rem;
   font-weight: 300;
@@ -549,7 +549,7 @@ nav {
 .teaching-card p {
   color: var(--muted-text);
   line-height: 1.9;
-  font-size: 1.05rem;
+  font-size: clamp(0.95rem, 0.6vw + 0.6rem, 1.05rem);
 }
 
 /* Principles */
@@ -590,7 +590,7 @@ nav {
 
 .principle-number {
   color: var(--accent-gold);
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 2.2vw + 0.8rem, 3rem);
   font-weight: 300;
   margin-bottom: 1rem;
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
@@ -612,7 +612,7 @@ nav {
 /* Footer */
 footer {
   background: rgba(10, 14, 39, 0.9);
-  padding: 6rem 4rem 3rem;
+  padding: clamp(3rem, 5vw, 6rem) clamp(1.5rem, 3vw, 4rem) 3rem;
   border-top: 1px solid rgba(212, 175, 55, 0.2);
 }
 
@@ -653,51 +653,7 @@ footer {
   font-size: 0.95rem;
 }
 
-/* View Toggle */
-.view-toggle {
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  z-index: 1000;
-  background: rgba(20, 27, 61, 0.9);
-  backdrop-filter: blur(10px);
-  padding: 0.5rem;
-  border-radius: 50px;
-  display: flex;
-  gap: 0.5rem;
-  border: 1px solid rgba(212, 175, 55, 0.3);
-}
-
-.view-toggle button {
-  background: transparent;
-  border: none;
-  color: var(--muted-text);
-  padding: 0.7rem 1.5rem;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-  letter-spacing: 0.05rem;
-}
-
-.view-toggle button.active {
-  background: var(--accent-gold);
-  color: var(--primary-dark);
-}
-
-.mobile-preview {
-  display: none;
-  max-width: 375px;
-  margin: 50px auto;
-  box-shadow: 0 0 80px rgba(212, 175, 55, 0.3);
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px solid rgba(212, 175, 55, 0.3);
-}
-
-.mobile-preview.active {
-  display: block;
-}
+/* Removed deprecated manual view toggle and mobile preview styles */
 
 /* Responsive */
 @media (max-width: 1200px) {

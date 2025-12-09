@@ -10,12 +10,9 @@
     <div class="cosmic-background"></div>
     <div class="stars" id="stars"></div>
 
-    <div class="view-toggle">
-        <button onclick="showDesktop()" id="desktopBtn" class="active">Desktop</button>
-        <button onclick="showMobile()" id="mobileBtn">Mobile</button>
-    </div>
+    <!-- Unified responsive layout: removed manual desktop/mobile toggle -->
 
-    <div id="desktopView">
+    <div>
         <!-- Header -->
         <header>
             <nav>
@@ -173,94 +170,8 @@
         </footer>
     </div>
 
-    <div class="mobile-preview" id="mobileView">
-        <div style="max-width: 375px;">
-            <!-- Same content for mobile preview -->
-            <header>
-                <nav>
-                    <div class="logo">
-                        <div class="logo-symbol">
-                            <div class="lines">
-                                <div class="line horizontal"></div>
-                                <div class="line vertical"></div>
-                                <div class="line diagonal1"></div>
-                                <div class="line diagonal2"></div>
-                            </div>
-                            <div class="outer-circles">
-                                <div class="outer-circle"></div>
-                                <div class="outer-circle"></div>
-                                <div class="outer-circle"></div>
-                                <div class="outer-circle"></div>
-                            </div>
-                            <div class="inner-circle"></div>
-                        </div>
-                        <div class="logo-text">
-                            <h1>The Church of the Holy Random</h1>
-                            <p>In Chaos, We Find Peace</p>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-
-            <section class="hero" style="min-height: 60vh;">
-                <div class="hero-background">
-                    <div class="fractal-pattern"></div>
-                </div>
-                <div class="hero-content">
-                    <h2 style="font-size: 2rem;">Embrace the Inevitable</h2>
-                    <p class="subtitle">The Beauty of Life Lies in Uncertainty</p>
-                    <p class="tagline" style="font-size: 0.95rem;">We are the architects of meaning in a universe governed by chance. Through acceptance of randomness, we discover the profound peace that comes from surrendering control.</p>
-                </div>
-            </section>
-
-            <section class="content-section" style="padding: 4rem 2rem;">
-                <div class="section-header">
-                    <h3 style="font-size: 1.8rem;">The Three Pillars</h3>
-                    <p style="font-size: 1rem;">Our understanding rests upon three fundamental truths that illuminate the path to peace through acceptance of the random nature of existence.</p>
-                </div>
-                <div class="pillars">
-                    <div class="pillar">
-                        <div class="pillar-icon">∞</div>
-                        <h4>Acceptance</h4>
-                        <p>We acknowledge that the universe unfolds according to principles beyond our comprehension. Every moment carries the weight of infinite possibilities, each equally valid, each equally transient. In accepting this, we free ourselves from the burden of false certainty.</p>
-                    </div>
-                    <div class="pillar">
-                        <div class="pillar-icon">⚛</div>
-                        <h4>Flow</h4>
-                        <p>Like water finding its path through stone, we learn to move with the currents of chance rather than against them. Resistance breeds suffering; acceptance breeds serenity. The river does not fight its course—it simply flows, and in flowing, shapes the world.</p>
-                    </div>
-                    <div class="pillar">
-                        <div class="pillar-icon">◯</div>
-                        <h4>Unity</h4>
-                        <p>Before the great randomness, all distinctions dissolve. Fortune and misfortune touch all lives without discrimination. In this universal uncertainty, we find our deepest connection—we are all particles dancing in the same cosmic probability field.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="quote-section" style="padding: 4rem 1.5rem;">
-                <blockquote style="font-size: 1.3rem;">
-                    Every atom in your body was forged in the heart of a dying star. You exist because of a billion improbable accidents. The universe itself may be one cosmic roll of the dice. Is this not the most beautiful truth?
-                </blockquote>
-                <cite>The Book of Random · Chapter 1, Verse 1</cite>
-            </section>
-
-            <footer style="padding: 4rem 2rem 2rem;">
-                <div class="footer-content" style="grid-template-columns: 1fr; gap: 2rem;">
-                    <div class="footer-section footer-about">
-                        <h6>About Our Community</h6>
-                        <p style="font-size: 0.95rem;">We are a contemplative community united by our acceptance of life's fundamental uncertainty. Through philosophical inquiry and shared reflection, we explore the profound peace that comes from embracing randomness.</p>
-                        <p style="font-size: 0.95rem;">No dogma binds us. No certainty imprisons us. We walk together in wonder.</p>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p>The Church of the Random</p>
-                    <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.7;">All moments are sacred. All outcomes equally valid. All beings equally worthy.</p>
-                </div>
-            </footer>
-        </div>
-    </div>
+    <!-- Removed duplicated mobile preview blocks; single responsive layout is used -->
 
     <script src="generateStars.js"></script>
-    <script src="responsive.js"></script>
 </body>
 </html>
